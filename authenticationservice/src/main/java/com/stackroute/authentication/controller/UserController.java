@@ -45,7 +45,7 @@ public class UserController {
 				{
 			map=securityTokenGenerator.generateToken(user);
 				}
-		 responseEntity=new ResponseEntity(map,HttpStatus.CREATED);
+		 responseEntity=new ResponseEntity(map,HttpStatus.created);
 	}
 	catch(UserNotFoundException e)
 	{
